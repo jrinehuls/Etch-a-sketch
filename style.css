@@ -1,5 +1,17 @@
 body {
     height: 100vh;
+    background-color: bisque;
+}
+
+.color-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
 }
 
 #grid {
@@ -11,12 +23,7 @@ body {
 td {
     border: 2px solid black;
     /*width: calc(100%/16 - 2px);*/
+    background-color: aliceblue;
     aspect-ratio: 1/1;
     padding: 0px;
 }
-
-/*
-td:hover {
-    background-color: black;
-}
-*/
