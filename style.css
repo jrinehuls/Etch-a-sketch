@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+}
+
+#grid {
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid black;
+    /*width: calc(100%/16 - 2px);*/
+    aspect-ratio: 1/1;
+    padding: 0px;
+}
+
+/*
+td:hover {
+    background-color: black;
+}
+*/
