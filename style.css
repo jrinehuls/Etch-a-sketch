@@ -1,28 +1,98 @@
 body {
     height: 100vh;
-    background-color: bisque;
+    background-color: rgb(0, 255, 255);
 }
 
-.color-buttons {
+h1,
+h2 {
+    text-align: center;
+    color:saddlebrown;
+    margin: 20px 0px 20px 0px;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.pallet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    height: 30px;
+}
+
+.input > #axis-text,
+.input > #submit-button {
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.error {
+    padding-top: 10px;
+    text-align: center;
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.pallet > div{
+    width:100%;
+}
+
+.color-button-div {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 2%;
+}
+
+.color-button {
+    width: 8%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#blue {
+    background-color: blue;
+}
+#black {
+    background-color: black;
+}
+#erase {
+    background-color: aliceblue;
 }
 
 .table {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 #grid {
-    width: 40%;
+    width: 60%;
     aspect-ratio: 1/1;
     border-collapse: collapse;
 }
 
 td {
     border: 2px solid black;
-    /*width: calc(100%/16 - 2px);*/
     background-color: aliceblue;
     aspect-ratio: 1/1;
     padding: 0px;

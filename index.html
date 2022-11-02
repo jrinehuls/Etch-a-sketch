@@ -9,19 +9,26 @@
     <title>Etch One Sketch: No more, No Fewer</title>
 </head>
 <body>
+    <h1>Welcome to Etch-One-Sketch, Not Two or More Sketches, or Fewer Than One Sketch.</h1>
+    <h2>To change the number of cells in the grid, type a number between 1 and 100 into the text field and click the submit button.</h2>
     <div class="input">
         <input id="axis-text" type="number">
         <button id="submit-button">Submit</button>
     </div>
-    <div>
+    <div class="error">
         <label id="error-label"></label>
     </div>
-    <div class="color-buttons">
-        <button class="color-button" value="red">Red</button>
-        <button class="color-button" value="green">Green</button>
-        <button class="color-button" value="blue">Blue</button>
-        <button class="color-button" value="black">Black</button>
-        <button class="color-button" value="aliceblue">Erase</button>
+    <div class="pallet">
+        <div>
+            <h1>Click on a color from the pallet to change paint color.</h1>
+        </div>
+        <div class="color-button-div">
+            <button id="black" class="color-button" value="black"></button>
+            <button id="red" class="color-button" value="red"></button>
+            <button id="green" class="color-button" value="green"></button>
+            <button id="blue" class="color-button" value="blue"></button>
+            <button id="erase" class="color-button" value="aliceblue"></button>
+        </div>
     </div>
     <div class="table">
         <table id="grid">
